@@ -1,0 +1,4 @@
+#define LEFT 0x00
+#define RIGHT 0x01
+#define INC 0x02
+#define DEC 0x03

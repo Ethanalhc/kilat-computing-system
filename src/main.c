@@ -1,0 +1,13 @@
+////////////////////////////////////////////////////
+// MAIN.c - Provide an entrypoint to the program. //
+////////////////////////////////////////////////////
+
+#include "CPU/cpu.h"
+
+int main() {
+    CPU cpu;
+
+    CPU_PowerOn(&cpu);
+
+    return 0;
+}
