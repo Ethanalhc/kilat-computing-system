@@ -1,5 +1,0 @@
-# ninja log v7
-10	73	7934725129354263	CMakeFiles/Kilat.dir/src/CPU/cpu.c.obj	47885fd792fae476
-15	115	7934725129404251	CMakeFiles/Kilat.dir/src/CPU/Memory/memory.c.obj	c3a88db9b5c36e53
-7	105	7934725407953948	CMakeFiles/Kilat.dir/src/main.c.obj	5176cfc67b2abeee
-105	288	7934725408936362	Kilat.exe	6db37609b76ee2ac

@@ -1,3 +1,0 @@
-C:/Users/ethan/Dev/KilatProject/Emulator/build/CMakeFiles/Kilat.dir
-C:/Users/ethan/Dev/KilatProject/Emulator/build/CMakeFiles/edit_cache.dir
-C:/Users/ethan/Dev/KilatProject/Emulator/build/CMakeFiles/rebuild_cache.dir
