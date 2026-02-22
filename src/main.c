@@ -2,12 +2,11 @@
 // MAIN.c - Provide an entrypoint to the program. //
 ////////////////////////////////////////////////////
 
-#include "CPU/cpu.h"
+#include "CPU/Memory/memory.h"
+#include <stdio.h>
 
 int main() {
-    CPU cpu;
-
-    CPU_PowerOn(&cpu);
+    
 
     return 0;
 }
