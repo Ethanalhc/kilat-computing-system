@@ -2,7 +2,8 @@
 
 int CPU_Init(CPU *cpu) {
     cpu->memory = calloc(1, 256*1024*1024);
-    cpu->PC = 0;
+    cpu->PC = 128;
+    cpu-> MP = 0;
     return 0;
 }
 

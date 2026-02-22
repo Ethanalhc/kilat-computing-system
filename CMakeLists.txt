@@ -9,6 +9,7 @@ add_executable(${PROJECT_NAME}
     src/main.c
     src/CPU/cpu.c
     src/CPU/Memory/memory.c
+    src/ISA/isa.c
 )
 
 target_include_directories(${PROJECT_NAME} PRIVATE "include")
