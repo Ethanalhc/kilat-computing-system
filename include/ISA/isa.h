@@ -4,14 +4,10 @@
 #include "includes.h"
 #include "CPU/cpu.h"
 
-typedef int (*func_ptr)(CPU *cpu);
-
-int NOP(CPU *cpu);
-int LEFT(CPU *cpu);
-int RIGHT(CPU *cpu);
+int NOP();
+int MPL(CPU *cpu);
+int MPR(CPU *cpu);
 int DEC(CPU *cpu);
 int INC(CPU *cpu);
-
-extern func_ptr instructions[5];
 
 #endif // ISA_H

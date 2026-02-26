@@ -3,6 +3,8 @@
 
 #include "includes.h"
 
+typedef int (*func_ptr)();
+
 typedef struct {
     uint32_t r[16];
     uint32_t PC;
@@ -11,6 +13,6 @@ typedef struct {
 } CPU;
 
 int CPU_Init(CPU *cpu);
-uint8_t CPU_Fetch(CPU *cpu);
+uint32_t CPU_Fetch(CPU *cpu);
 
 #endif // CPU_H

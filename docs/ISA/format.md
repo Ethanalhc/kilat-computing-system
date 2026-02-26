@@ -1,0 +1,1 @@
+0x00 (Addr Mode) 0000 (Opcode ID) 00 (Rd) 00000000 (Data)
