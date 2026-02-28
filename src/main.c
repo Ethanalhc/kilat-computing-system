@@ -17,11 +17,9 @@ int main(int argc, char *argv[]) {
     if (MEM_LoadFile(0x8000000, argv[1], cpu.memory)) {
         MEM_Load8(0xFF, 0x8000000, cpu.memory);
     }
-    MEM_Dump(cpu.PC, cpu.memory);
 
     uint32_t opcode;
     uint32_t operands;
-    func_ptr func;
 
     // Fetch -> Execute -> Decode Cycle
     int on = 1;
@@ -32,34 +30,29 @@ int main(int argc, char *argv[]) {
         operands = CPU_Fetch(&cpu);
         cpu.PC += 4;
 
-        printf("%08X\n", opcode);
-        printf("%08X\n", operands);
-
-        // Decode
+        // Decode & Execute
         switch (opcode & 0xFFFFFF00) {
             case 0xFFFFFF00:
                 on = 0;
                 break;
             case 0:
+                NOP();
                 break;
             case 0x00000100:
-                func = MPL;
+                MPL(&cpu);
                 break;
             case 0x00000200:
-                func = MPR;
+                MPR(&cpu);
                 break;
             case 0x00000300:
-                func = DEC;
+                DEC(&cpu);
                 break;
             case 0x00000400:
-                func = INC;
+                INC(&cpu);
                 break;
             default:
                 printf("Could not find opcode");
         }
-
-        // Execute
-        func(&cpu);
     }
 
     MEM_Dump(0, cpu.memory);
